@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap_css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/OTP.css">
+    <title>Jobaskit | OTP verification</title>
+</head>
+
+<body>
+
+    <div class="otpWrapper">
+        <div class="container">
+            <div class="otpcontent">
+
+                <h1 class="landingHeading text-center">OTP verification</h1>
+                <p class=" landingInfo text-center">Please Enter the 5 digit number
+                    <br> Sent to your Email id
+                </p>
+                <form class="formWrap">
+                    <div>
+                        <svg class="iconlock" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="38.5" cy="38.5" r="38.5" fill="#153D7E" />
+                            <g clip-path="url(#clip0_91_199)">
+                                <path
+                                    d="M52 40.4V38C52 37.3635 51.7471 36.753 51.297 36.3029C50.8469 35.8529 50.2365 35.6 49.6 35.6H25.6C24.9634 35.6 24.353 35.8529 23.9029 36.3029C23.4528 36.753 23.2 37.3635 23.2 38V52.4C23.2 53.0365 23.4528 53.647 23.9029 54.0971C24.353 54.5471 24.9634 54.8 25.6 54.8H49.6C50.2365 54.8 50.8469 54.5471 51.297 54.0971C51.7471 53.647 52 53.0365 52 52.4V50M52 40.4H42.4C41.1269 40.4 39.906 40.9057 39.0058 41.8059C38.1057 42.7061 37.6 43.927 37.6 45.2C37.6 46.473 38.1057 47.6939 39.0058 48.5941C39.906 49.4943 41.1269 50 42.4 50H52M52 40.4C53.273 40.4 54.4939 40.9057 55.3941 41.8059C56.2942 42.7061 56.8 43.927 56.8 45.2C56.8 46.473 56.2942 47.6939 55.3941 48.5941C54.4939 49.4943 53.273 50 52 50M30.4 35.6V28.4C30.4 26.4904 31.1585 24.6591 32.5088 23.3088C33.859 21.9586 35.6904 21.2 37.6 21.2C39.5095 21.2 41.3409 21.9586 42.6911 23.3088C44.0414 24.6591 44.8 26.4904 44.8 28.4V35.6M50.8 45.2H53.2M46 45.2H48.4M41.2 45.2H43.6"
+                                    stroke="white" stroke-width="2" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_91_199">
+                                    <rect width="36" height="36" fill="white" transform="translate(22 20)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                    </div>
+                    <h2 class="otpsubheading">Enter OTP here</h2>
+                    <div class="otp-field">
+                        <input type="number" autofocus="true" maxlength="1" />
+                        <input type="number" maxlength="1" />
+                        <input type="number" maxlength="1" />
+                        <input type="number" maxlength="1" />
+                        <input type="number" maxlength="1" />
+                    </div>
+                    <p class="supportheading">Didn't receive OTP? <a href="">Resend Now</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#successmodal">
+        Launch static backdrop modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="successmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="successmodalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-lg">
+            <div class=" modal-content custda">
+                <!-- <div class="modal-header border-0   ">
+
+                </div> -->
+                <div class="modal-body">
+                    <div class="mainDailog">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div>
+                            <svg class="successicon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_408_2)" class="borderClas">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0 20C0 14.6957 2.10714 9.60859 5.85786 5.85786C9.60859 2.10714 14.6957 0 20 0C25.3043 0 30.3914 2.10714 34.1421 5.85786C37.8929 9.60859 40 14.6957 40 20C40 25.3043 37.8929 30.3914 34.1421 34.1421C30.3914 37.8929 25.3043 40 20 40C14.6957 40 9.60859 37.8929 5.85786 34.1421C2.10714 30.3914 0 25.3043 0 20ZM18.8587 28.56L30.3733 14.1653L28.2933 12.5013L18.4747 24.7707L11.52 18.976L9.81333 21.024L18.8587 28.56Z"
+                                        fill="#0E387A" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_408_2">
+                                        <rect width="40" height="40" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div>
+                            <h2 class="modalHeading">Verified Successfully</h2>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Toast -->
+    <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+    <div class="toast-container position-fixed top-0 start-50 translate-middle-x p-3">
+        <div id="liveToast" class="toast text-bg-danger" role="alert" aria-live="assertive" aria-atomic="true">
+            <!-- <div class="toast-header">
+                <img src="..." class="rounded me-2" alt="...">
+                <strong class="me-auto">Jobaskit</strong>
+
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div> -->
+            <div class="toast-body">
+                Invalid OTP. Please check and try again.
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-container position-fixed top-0 start-50 translate-middle-x p-3">
+        <div id="errorToast" class="toast text-bg-danger" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-body">
+                Please fill all the input fields and try again.
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap_js/bootstrap.min.js"></script>
+    <script src="js/OTP.js"></script>
+    <script>
+
+
+        const toastTrigger = document.getElementById('liveToastBtn')
+        const toastLiveExample = document.getElementById('liveToast')
+
+        if (toastTrigger) {
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample, {
+                delay: 3000,
+            })
+            toastTrigger.addEventListener('click', () => {
+                toastBootstrap.show()
+            })
+
+        }
+
+
+
+
+
+    </script>
+    <script>
+
+        // var modal1 = new bootstrap.Modal(document.getElementById('successmodal'));
+
+        // document.addEventListener("keyup", (e) => {
+        //     if (e.key === "Escape") {
+        //         modal1.hide();
+        //     }
+        // })
+        // setInterval(() => {
+
+        //     modal1.toggle();
+        // }, 2000)
+
+    </script>
+</body>
+
+</html>
