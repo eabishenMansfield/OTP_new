@@ -2,6 +2,7 @@
 
 :root {
     --brand-color: #0E387A;
+    --light-color: #0e377ac5;
 }
 
 * {
@@ -34,7 +35,7 @@ input[type=number] {
     justify-content: center;
     flex-direction: column;
     margin-top: 2rem;
-
+    transition: all 0.3s ease;
 }
 
 .landingHeading {
@@ -59,26 +60,104 @@ input[type=number] {
     box-shadow: 2px 2px 10px rgb(0, 00, 0, 0.05);
     /* min-width: 30px; */
     max-width: 100%;
+    width: 320px;
+    height: 297px;
     margin-inline: 10px;
+    transition: all 0.3s ease;
+    /* transform-origin: bottom; */
 }
 
+.formWrap.zoom-in {
+    /* position: fixed; */
+    /* inset-block-start: 50%; */
+    /* transform: scale(1.1); */
+    background-color: rgba(255, 255, 255, 0.849);
+    -webkit-backdrop-filter: blur(05px);
+    backdrop-filter: blur(05px);
+    transition: all 0.3 ease;
+    width: 400px;
+    height: 350px;
+}
+
+
 .iconlock {
-    height: 60px;
-    width: 60px;
+    height: 0px;
+    width: 0px;
     text-align: center;
     margin-inline: auto;
     margin-block-end: 1rem;
 }
 
+.successicon {
+    height: 0px;
+    width: 0px;
+    text-align: center;
+    margin-inline: auto;
+    margin-block-end: 1rem;
+    border-radius: 50%;
+    fill: var(--brand-color);
+    border: 0px solid rgba(11, 65, 151, 0.473);
+}
+
+.defaHeight {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconlock.shown {
+    height: 60px;
+    width: 60px;
+
+}
+
+.successicon.shown {
+    height: 100px;
+    width: 100px;
+    border-width: 10px;
+    transition: all 0.3s ease;
+
+}
+
 .otpsubheading {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 800;
+}
+
+.heading {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+}
+
+.OTPId,
+.successID {
+    position: absolute;
+    width: 100%;
+    transition: width 3s ease;
+}
+
+.successID {
+    opacity: 0;
+    scale: 0;
 }
 
 .otp-field {
     display: flex;
     justify-content: center;
     gap: 10px;
+    transform-origin: top;
+}
+
+
+.otp-field.hidden {
+    transition: height 0.3s ease;
+    height: 0;
+    overflow: hidden;
 }
 
 .otp-field input {
@@ -131,6 +210,9 @@ input[type=number] {
 }
 
 
+
+
+
 .mainDailog {
     min-height: 60vh;
     display: flex;
@@ -139,15 +221,16 @@ input[type=number] {
     flex-direction: column;
 }
 
-.successicon {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 10px solid rgba(11, 65, 151, 0.473);
-}
+
 
 .modalHeading {
     margin-block-start: 1rem;
     font-weight: 700;
     color: var(--brand-color);
+}
+
+
+.iconlock,
+.successicon {
+    transform-origin: center;
 }
