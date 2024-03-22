@@ -25,8 +25,8 @@
                     <br> Sent to your Email id
                 </p>
                 <form class="formWrap">
-                    <div>
-                        <svg class="iconlock" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div class="defaHeight">
+                        <svg class="iconlock shown" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="38.5" cy="38.5" r="38.5" fill="#153D7E" />
                             <g clip-path="url(#clip0_91_199)">
                                 <path
@@ -39,9 +39,23 @@
                                 </clipPath>
                             </defs>
                         </svg>
-
+                        <svg class="successicon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_408_2)" class="borderClas">
+                                <path id="tickPath" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 20C0 14.6957 2.10714 9.60859 5.85786 5.85786C9.60859 2.10714 14.6957 0 20 0C25.3043 0 30.3914 2.10714 34.1421 5.85786C37.8929 9.60859 40 14.6957 40 20C40 25.3043 37.8929 30.3914 34.1421 34.1421C30.3914 37.8929 25.3043 40 20 40C14.6957 40 9.60859 37.8929 5.85786 34.1421C2.10714 30.3914 0 25.3043 0 20ZM18.8587 28.56L30.3733 14.1653L28.2933 12.5013L18.4747 24.7707L11.52 18.976L9.81333 21.024L18.8587 28.56Z"
+                                    fill="" />
+                            </g>
+                            <defs>
+                                <clipPath class="successpath" id="clip0_408_2">
+                                    <rect width="40" height="40" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
                     </div>
-                    <h2 class="otpsubheading">Enter OTP here</h2>
+                    <div class="heading">
+                        <h2 class="otpsubheading OTPId show">Enter OTP here</h2>
+                        <h2 class="otpsubheading successID">Verified Successfully!</h2>
+                    </div>
                     <div class="otp-field">
                         <input type="number" autofocus="true" maxlength="1" />
                         <input type="number" maxlength="1" />
@@ -55,19 +69,18 @@
         </div>
     </div>
 
+
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#successmodal">
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#successmodal">
         Launch static backdrop modal
-    </button>
+    </button> -->
 
     <!-- Modal -->
-    <div class="modal fade" id="successmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    <!-- <div class="modal fade" id="successmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="successmodalLabel" aria-hidden="true">
         <div class="modal-dialog  modal-lg">
             <div class=" modal-content custda">
-                <!-- <div class="modal-header border-0   ">
 
-                </div> -->
                 <div class="modal-body">
                     <div class="mainDailog">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -93,11 +106,11 @@
 
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- Toast -->
-    <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+    <!-- <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button> -->
 
     <div class="toast-container position-fixed top-0 start-50 translate-middle-x p-3">
         <div id="liveToast" class="toast text-bg-danger" role="alert" aria-live="assertive" aria-atomic="true">
@@ -123,6 +136,19 @@
 
 
     <script src="js/bootstrap_js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.1.2/dist/confetti.browser.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/EasePack.min.js"></script>
+
     <script src="js/OTP.js"></script>
     <script>
 
